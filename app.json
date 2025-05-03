@@ -2,6 +2,9 @@
   "expo": {
     "name": "WeatherMobileApp",
     "slug": "WeatherMobileApp",
+    "extra": {
+      "WEATHER_API_KEY": "YOUR_API_KEY_HERE"
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
