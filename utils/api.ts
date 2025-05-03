@@ -4,11 +4,16 @@ import Constants from 'expo-constants';
 // Fetch weather function
 export const fetchWeather = async (city: string) => {
   // Access the API key from app.json using Constants
-  const apiKey = Constants.extra.WEATHER_API_KEY;
+  const weatherApiKey = Constants.expoConfig?.extra?.weatherApiKey;
+
+  // Check if the API key is available
+  if (!weatherApiKey) {
+    throw new Error('API key is missing. Please set WEATHER_API_KEY in your .env file.');
+  }
 
   // Construct the URLs for current weather and forecast
-  const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+  const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherApiKey}&units=metric`;
+  const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${weatherApiKey}&units=metric`;
 
   try {
     // Fetch weather and forecast data
