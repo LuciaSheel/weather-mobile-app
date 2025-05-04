@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { View, Text } from 'react-native';
 import { fetchWeather } from './utils/api';
-import ThemeToggle from './components/ThemeToggle';
 import SearchBar from './components/SearchBar';
 import WeatherDisplay from './components/WeatherDisplay';
 import Forecast from './components/Forecast';
@@ -64,7 +63,6 @@ function App() {
 
   return (
     <View style={{ flex: 1, padding: 20 }}>
-      <ThemeToggle />
       <Text style={{ fontSize: 24, fontWeight: 'bold', textAlign: 'center' }}>Weather App</Text>
 
       <SearchBar city={city} setCity={setCity} onSearch={handleSearch} />
