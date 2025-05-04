@@ -1,4 +1,3 @@
-// components/ThemeToggle.tsx
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { Pressable, Text, StyleSheet } from 'react-native';
