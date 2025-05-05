@@ -52,7 +52,6 @@ A simple mobile weather application built using Expo and React Native. This app 
 * Search for current weather by city
 * View 5-day forecast
 * Loading and error handling states
-* Light/Dark mode (in development or subject to removal)
 
 ---
 
@@ -77,9 +76,7 @@ This app was built using [Expo](https://expo.dev/), which supports both Android 
 
 ## 🙏 Acknowledgements
 
-This project was built with the support of my instructor, Piyush, who provided valuable direction and feedback. Additional help came from ChatGPT, which I used to debug tricky issues, generate boilerplate code, and refine documentation.
+This project was built with the support of my instructor, Piyush, who provided valuable direction. Additional help came from ChatGPT, which I used to debug tricky issues, generate boilerplate code, and refine documentation.
 
-## 📦 Deployment
-
-*Deployment steps to be added soon.* You may consider using [EAS Build](https://docs.expo.dev/build/introduction/) for production builds.
+Thanks for visiting!
 
