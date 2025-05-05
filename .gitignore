@@ -17,5 +17,6 @@ Thumbs.db  # Windows specific
 .idea/
 .vscode/
 
-.cache_ggshield
+#GitGuardian
+.cache_ggshield*
 
