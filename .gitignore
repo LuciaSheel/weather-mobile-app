@@ -16,3 +16,6 @@ Thumbs.db  # Windows specific
 # IDE or editor files
 .idea/
 .vscode/
+
+.cache_ggshield
+
